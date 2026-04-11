@@ -39,5 +39,47 @@ for i in range(0, n):
     num_under_line -= 1
     num_star += 1
     print('_' * num_under_line + '*' * num_star)
+    # 1: num_under_line = 2, num_star = 1
+    # 2: num_under_line = 1, num_star = 2
+
+    # recursive 遞迴
 
 
+# 你的寫法
+n = int(input())
+
+for i in range(1, n + 1):           # i = 1, 2,... , n
+    print("_" * (n - i) + "*" * i)  # * = (n-i)
+
+
+
+
+
+# 數學
+
+'''
+an = 1, 2, 3, 4, 5, ....
+
+表示法：
+一般式 (general form)
+an = n
+a1 = 1
+a2 = 2
+
+recursive
+a_n = a_n-1 + 1
+後 = 前 + 1
+a_1 = 1
+
+a_2 = 2
+a_3 = 3
+
+
+ai = (5-i)
+a1 = 4
+a2 = 3
+a3 = 2
+
+
+
+'''

@@ -1,0 +1,31 @@
+# 說明
++ 代表新增資料 | - 代表刪除資料
+題目第一行會先給一個數字代表總共要做幾次 +或- 的操作。
+請輸出最後還存在的資料（依照新增順序輸出）
+
+# input 1
+4
++ string
++ apple
++ banana
+- string
+
+# output 1
+apple
+banana
+
+
+# input 2
+6
++ string
++ apple
++ banana
+- string
++ pineapple
++ string
+
+# output 2
+apple
+banana
+pineapple
+string
