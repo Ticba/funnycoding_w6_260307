@@ -1,0 +1,13 @@
+網頁
+html(架構), css(美觀), javascript(程式語言)
+
+python 開發網頁 - 利用套件
+
+
+資料處理、AI
+python 
+
+
+JAVA 網頁後端 (OOP) - 物件導向程式語言
+
+c/c++ pointer (指標)

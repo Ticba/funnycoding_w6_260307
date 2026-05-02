@@ -6,7 +6,7 @@ def colortext(color="白", text=""):
         return f"\033[37m{text}\033[0m"
     elif color=="天藍":
         return f"\033[36m{text}\033[0m"
-#改顏色
+#改顏色 ANSI 碼
 "\033[30m黑色字\033[0m"
 "\033[31m紅色字\033[0m"
 "\033[32m綠色字\033[0m"
