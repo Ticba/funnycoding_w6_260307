@@ -16,6 +16,11 @@ class Fraction:
         newde = self.de * otherfraction.de
         # 通分
 
+        # 找 newnu, newde 的 GCD (最大公因數)
+        # 1. 尤拉
+        # 2. 短除法
+        # 3. 輾轉相除法
+
         return Fraction(newnu,newde)
 
     def print_info(self):
