@@ -4,6 +4,7 @@
 #    1. . (單一一個點)
 #    2. .. (上一層目錄)
 # New-Item [file_name.xxx] -ItemType ["file"|"directory"] 建立新檔案或資料夾
+# New-Item [file_name|folder_name] 根據有沒有副檔名決定要創的節點是檔案或是資料夾 (optional)
 # tree 列印所有子資料夾
 # 
 
@@ -13,7 +14,11 @@
 
 # mac
 # cd /
+# 單純的文字檔可能不會有副檔名
 
 
 # linux
 # cd /
+
+
+.split('/')

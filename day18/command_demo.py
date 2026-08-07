@@ -8,12 +8,24 @@ class File:
     def __init__(self, name):
         self.name = name
 
+def list_directory():   # no parameter
+    pass
+
+
+
+def move_directory(path):
+    path.split("/")
+    pass
+
 def all_descendant(folder, depth = 0):
     print("    " * depth + folder.name)
 
     child = folder.children[0]
     
     all_descendant(child, depth + 1)
+
+def create_item(name, is_item_type=None, item_type=None):
+    pass
 
 
 
@@ -35,6 +47,8 @@ file1 = File('test.txt')
 root.children.append(file1)
 
 
+
+
 # 
 while True:
 
@@ -46,12 +60,15 @@ while True:
     parts = command.split()     # cd ..
     action = parts[0].lower()
 
-    if action == "hi":
-        print('hi')
+    if action == "ls":
+        list_directory(*parts[1:])
     if action == "cd":
-        print()
+        move_directory(*parts[1:])
     if action == "tree":        # descendant
-        all_descendant(folder)
+        all_descendant(*parts[1:])
         pass
+
+    if action == "NewItem":
+        create_item(*parts[1:])
     else:
         print("\033[31m無法辨識\033[0m")
