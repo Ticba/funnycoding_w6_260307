@@ -87,9 +87,9 @@ def dfs(node, parent):
     print(node)
 
     if node in tree:
-        for next in tree[node]:
-            if next != parent:
-                dfs(next, node)
+        for next_node in tree[node]:    # nxt
+            if next_node != parent:
+                dfs(next_node, node)
 
 dfs('1', None)
 print(tree)
@@ -100,6 +100,31 @@ print(tree)
 # zerojudge b517, b518
 
 
+# b517 
+
+# 要如何用 dfs 來判斷一個 graph 是不是 tree
+# 修改成在走節點的過程中，
+
+'''
+你可能會需要用到 set()
+1. 檢查有沒有 cycle
+
+2. 檢查是不是多個 part
+
+'''
 
 
+# 修改 dfs 來完成
+'''
+(1) 計算 depth of nodes
+
+(2) 計算 height of a tree
+
+(3) 計算 size of a tree
+
+(4) 計算 distance of two nodes
+
+(5) 計算 tree diameter
+
+'''
 
